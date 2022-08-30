@@ -3,13 +3,13 @@
 
 .global-button {
     @include button(globalOrange);
+}
+
+.global-button--block {
 
     @include mq(max-md) {
-        position: fixed;
-        z-index: 199;
-        top: 50%;
-        right: 20%;
-        transform: translateX(400%);
+        display: block;
+        margin-bottom: rem(10);
     }
 }
 
@@ -20,12 +20,10 @@
 
 .global-button--contact {
         @include mq(max-md) {
-                margin-top: rem(100);
-                border-color:colors(white) ;
+                border-color:colors(white);
             }
 
     @include button(globalBlue)
-
 
 }
 

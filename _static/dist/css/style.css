@@ -409,6 +409,7 @@ th {
 }
 
 .global-header__inner {
+  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -417,7 +418,7 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0.9375rem;
+  margin: 15px auto;
 }
 @media screen and (max-width: 768px) {
   .global-header__inner {
@@ -434,6 +435,19 @@ th {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .global-header__button {
+    position: fixed;
+    z-index: 199;
+    top: 50%;
+    right: 20%;
+    -webkit-transform: translateX(400%);
+            transform: translateX(400%);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
 }
 
 .global-logo {
@@ -568,14 +582,11 @@ th {
   transition: 0.5s;
   letter-spacing: 0.0625rem;
 }
+
 @media screen and (max-width: 768px) {
-  .global-button {
-    position: fixed;
-    z-index: 199;
-    top: 50%;
-    right: 20%;
-    -webkit-transform: translateX(400%);
-            transform: translateX(400%);
+  .global-button--block {
+    display: block;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -603,7 +614,6 @@ th {
 }
 @media screen and (max-width: 768px) {
   .global-button--contact {
-    margin-top: 6.25rem;
     border-color: #fff;
   }
 }
@@ -622,7 +632,7 @@ th {
 }
 
 @media screen and (max-width: 768px) {
-  .drawer-checkbox:checked ~ .global-button {
+  .drawer-checkbox:checked ~ .global-header__button {
     -webkit-transform: translateX(50%);
             transform: translateX(50%);
   }
@@ -676,7 +686,7 @@ th {
   height: 3px;
   background-color: #1B224C;
   border-radius: 10px;
-  margin-top: -2px;
+  margin-top: -3px;
 }
 
 .drawer::before {

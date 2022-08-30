@@ -1,11 +1,14 @@
 @use '../setting' as *;
 @use '../mixin' as *;
 
+
+
 .global-header__inner {
+    max-width: 1920px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: rem(15);
+    margin: 15px auto;
 
     @include mq(max-md) {
         justify-content: space-between;
@@ -15,4 +18,16 @@
 .global-header__wrap{
     display: flex;
     align-items: center;
+}
+
+.global-header__button {
+
+    @include mq(max-md) {
+        position: fixed;
+        z-index: 199;
+        top: 50%;
+        right: 20%;
+        transform: translateX(400%);
+        transition: .5s;
+    }
 }
