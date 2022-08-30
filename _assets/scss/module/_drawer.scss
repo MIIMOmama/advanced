@@ -11,7 +11,7 @@
     transform: translateX(50%);
 }
 
-.drawer-checkbox:checked ~ .global-header__button {
+.drawer-checkbox:checked ~ .global-header__wrap .global-header__button {
     @include mq(max-md) {
     transform: translateX(50%);
     }

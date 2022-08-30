@@ -6,18 +6,24 @@
 .global-header__inner {
     max-width: 1920px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 15px auto;
+    margin: rem(15) auto;
+    padding: 0 rem(20);
 
     @include mq(max-md) {
         justify-content: space-between;
     }
 }
 
-.global-header__wrap{
+.global-header__wrap {
+    display: flex;
+}
+
+.global-header__info-wrap{
     display: flex;
     align-items: center;
+    margin-right: rem(23);
 }
 
 .global-header__button {
