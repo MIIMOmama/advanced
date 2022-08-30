@@ -1,0 +1,18 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-header__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: rem(15);
+
+    @include mq(max-md) {
+        justify-content: space-between;
+    }
+}
+
+.global-header__wrap{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,43 @@
+@use '../setting' as *;
+$initType: 'normal';
+
+@mixin button($type: $initType) {
+
+    //共通スタイル
+
+    //サイト共通ボタンのスタイル1
+    @if($type =='globalBlue') {
+        //スタイル
+        box-sizing: border-box;
+        border: rem(3) solid colors(siteBlue);
+        display: inline-block;
+        padding: rem(14) rem(21);
+        background-color: colors(siteBlue);
+        color: colors(white);
+        font-size: rem(14);
+        font-weight: bold;
+        border-radius: rem(5);
+        text-align: center;
+        text-decoration: none;
+        transition: .5s;
+        letter-spacing: rem(1);
+    }
+
+    //サイト共通ボタンのスタイル2
+    @else if($type =='globalOrange') {
+        box-sizing: border-box;
+        border: rem(3) solid colors(siteOrange);
+        background-color: colors(siteOrange);
+        display: inline-block;
+        padding: rem(14) rem(38);
+        color: colors(white);
+        font-size: rem(14);
+        font-weight: bold;
+        border-radius: rem(5);
+        text-align: center;
+        text-decoration: none;
+        transition: .5s;
+        letter-spacing: rem(1);
+}
+
+}

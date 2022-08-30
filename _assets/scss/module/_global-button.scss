@@ -1,0 +1,34 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-button {
+    @include button(globalOrange);
+
+    @include mq(max-md) {
+        position: fixed;
+        z-index: 199;
+        top: 50%;
+        right: 20%;
+        transform: translateX(400%);
+    }
+}
+
+.global-button:hover {
+    background-color: colors(white);
+    color: colors(siteOrange);
+}
+
+.global-button--contact {
+        @include mq(max-md) {
+                margin-top: rem(100);
+                border-color:colors(white) ;
+            }
+
+    @include button(globalBlue)
+
+
+}
+
+.global-button--contact:hover {
+    color: colors(siteBlue);
+}

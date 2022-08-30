@@ -1,0 +1,13 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-logo {
+    display: flex;
+    align-items: center;
+    width: rem(136);
+}
+
+.global-logo__img {
+    display: block;
+    width: 100%;
+}

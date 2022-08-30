@@ -1,0 +1,63 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-nav {
+    display: flex;
+    align-items: center;
+
+// ドロワー開いた時
+    @include mq(max-lg) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 199;
+        transform: translateX(200%);
+        transition: .5s;
+        background-color: colors(siteBlue);
+        justify-content: start;
+        align-items: flex-start;
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+.global-nav__list {
+    display: flex;
+    color:  colors(siteBlue);
+    font-weight: bold;
+
+    // ドロワー開いた時
+    @include mq(max-lg) {
+        display: block;
+        background-color: colors(siteBlue);
+        position: fixed;
+        top: 10%;
+        left: 10%;
+    }
+}
+
+.global-nav__item {
+    margin-right: rem(28);
+
+    // ドロワー開いた時
+    @include mq(max-lg) {
+        margin-bottom: rem(30);
+    }
+}
+
+.global-nav__link {
+    // ドロワー開いた時
+    @include mq(max-lg) {
+        font-size: rem(28);
+        color: colors(white);
+    }
+}
+
+.global-nav__link:focus,
+.global-nav__link:hover {
+    border-bottom: rem(3) solid colors(siteBlue);
+
+    @include mq(max-lg) {
+    border-bottom: rem(3) solid colors(white);
+    }
+}

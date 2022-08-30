@@ -1,0 +1,26 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.contact-info {
+    color: colors(siteBlue);
+}
+.contact-info__time {
+    font-size: rem(12);
+    text-align: right;
+}
+
+.contact-info__tel {
+    font-weight: bold;
+    display: table;
+}
+
+.contact-info__tel-link {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.contact-info__tel::before {
+    content: url(../img/tel-icon.png);
+    display: inline-block;
+    transform: scale(0.5);
+}

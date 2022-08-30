@@ -1,0 +1,19 @@
+// タグ指定での共通スタイル
+// jsで使用するためのクラス'js'+'-'+'クラス名'
+// 例
+// <nav class="gnav">
+// <ul class="gnav-list">
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// <li class="gnav-item js-gnav-item"><a href="#"></a></li>
+// </ul>
+// </nav>
+
+@use '../mixin' as *;
+@use '../mixin' as *;
+
+html {
+    @include mq(max-lg) {
+        font-size: 75%;
+    }
+}
