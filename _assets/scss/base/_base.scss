@@ -12,11 +12,21 @@
 @use '../mixin' as *;
 @use '../mixin' as *;
 
+_::-webkit-full-page-media,
+_:future,
+:root body {
+    @include mq(max-xl) {
+        font-size: 75%;
+    }
+}
+
 html {
     @include mq(max-lg) {
         font-size: 75%;
     }
 }
+
+
 
 body {
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;

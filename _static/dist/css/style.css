@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@media screen and (max-width: 1200px) {
+  _::-webkit-full-page-media,
+_:future,
+:root body {
+    font-size: 75%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 75%;
