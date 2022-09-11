@@ -584,10 +584,7 @@ th {
 .global-button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 0.1875rem solid #F5A623;
-  background-color: #F5A623;
   display: inline-block;
-  padding: 0.875rem 2.375rem;
   color: #fff;
   font-size: 0.875rem;
   font-weight: bold;
@@ -597,6 +594,9 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
+  border: 0.1875rem solid #F5A623;
+  background-color: #F5A623;
+  padding: 0.875rem 2.375rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -615,10 +615,7 @@ th {
   margin-left: 0.625rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 0.1875rem solid #1B224C;
   display: inline-block;
-  padding: 0.875rem 1.3125rem;
-  background-color: #1B224C;
   color: #fff;
   font-size: 0.875rem;
   font-weight: bold;
@@ -628,6 +625,9 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
+  border: 0.1875rem solid #1B224C;
+  padding: 0.875rem 1.3125rem;
+  background-color: #1B224C;
 }
 @media screen and (max-width: 768px) {
   .global-button--contact {
