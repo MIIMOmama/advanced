@@ -1,7 +1,12 @@
+@charset "UTF-8";
 @media screen and (max-width: 1000px) {
   html {
     font-size: 75%;
   }
+}
+
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 /*----------------------------------------
@@ -572,6 +577,8 @@ th {
   display: inline-block;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+  position: relative;
+  top: 0.1875rem;
 }
 
 .global-button {
