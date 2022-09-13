@@ -1,8 +1,9 @@
 @use '../setting' as *;
-$initType: 'normal';
+$commonColor: colors(siteBlue);
+$commonWidth: rem(137);
 
 
-@mixin button($type: $initType, $color, $width) {
+@mixin button($color: $commonColor, $width: $commonWidth) {
     //共通スタイル
         box-sizing: border-box;
         display: inline-block;

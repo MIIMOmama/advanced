@@ -610,17 +610,16 @@ th {
   max-width: 100%;
   padding: 0.875rem 0.625rem;
 }
+.global-button:hover, .global-button:focus {
+  background-color: #fff;
+  color: #F5A623;
+}
 
 @media screen and (max-width: 768px) {
   .global-button--block {
     display: block;
     margin-bottom: 0.625rem;
   }
-}
-
-.global-button:hover, :focus {
-  background-color: #fff;
-  color: #F5A623;
 }
 
 .global-button--contact {
@@ -649,8 +648,7 @@ th {
     margin-left: 0;
   }
 }
-
-.global-button--contact:hover {
+.global-button--contact:hover, .global-button--contact:focus {
   color: #1B224C;
 }
 

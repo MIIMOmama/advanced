@@ -2,6 +2,11 @@
 @use '../mixin' as *;
 
 .global-button {
+    &:hover,
+    &:focus {
+        background-color: colors(white);
+        color: colors(siteOrange);
+        }
     @include button($color:colors(siteOrange),$width:rem(142));
 }
 
@@ -13,22 +18,16 @@
     }
 }
 
-.global-button:hover,:focus {
-    background-color: colors(white);
-    color: colors(siteOrange);
-}
-
 .global-button--contact {
     margin-left: rem(10);
         @include mq(max-md) {
                 border-color:colors(white);
                 margin-left: 0;
             }
+    @include button();
 
-    @include button($color:colors(siteBlue), $width:rem(137))
-
-}
-
-.global-button--contact:hover {
-    color: colors(siteBlue);
+    &:hover,
+    &:focus {
+        color: colors(siteBlue);
+    }
 }
