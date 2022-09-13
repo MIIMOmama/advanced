@@ -7,7 +7,7 @@
         background-color: colors(white);
         color: colors(siteOrange);
         }
-    @include button($color:colors(siteOrange),$width:rem(142));
+    @include button($color:siteOrange,$width:142);
 }
 
 .global-button--block {

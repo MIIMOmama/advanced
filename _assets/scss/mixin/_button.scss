@@ -1,9 +1,6 @@
 @use '../setting' as *;
-$commonColor: colors(siteBlue);
-$commonWidth: rem(137);
 
-
-@mixin button($color: $commonColor, $width: $commonWidth) {
+@mixin button($color: siteBlue, $width: 137) {
     //共通スタイル
         box-sizing: border-box;
         display: inline-block;
@@ -15,9 +12,9 @@ $commonWidth: rem(137);
         text-decoration: none;
         transition: .5s;
         letter-spacing: rem(1);
-        background-color: $color;
-        width: $width;
-        border: 3px solid $color;
+        background-color: colors($color);
+        width: rem($width);
+        border: 3px solid colors($color);
         max-width: 100%;
         padding: rem(14) rem(10);
 }
