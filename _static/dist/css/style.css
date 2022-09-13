@@ -605,8 +605,7 @@ th {
   transition: 0.5s;
   letter-spacing: 0.0625rem;
   height: 3.125rem;
-  line-height: 3;
-  border: 0.1875rem solid #F5A623;
+  line-height: 3.5;
   background-color: #F5A623;
   width: 8.875rem;
 }
@@ -638,8 +637,7 @@ th {
   transition: 0.5s;
   letter-spacing: 0.0625rem;
   height: 3.125rem;
-  line-height: 3;
-  border: 0.1875rem solid #1B224C;
+  line-height: 3.5;
   background-color: #1B224C;
   width: 8.5625rem;
 }

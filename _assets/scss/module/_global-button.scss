@@ -2,7 +2,7 @@
 @use '../mixin' as *;
 
 .global-button {
-    @include button(globalOrange);
+    @include button($color:colors(siteOrange),$width:rem(142));
 }
 
 .global-button--block {
@@ -25,7 +25,7 @@
                 margin-left: 0;
             }
 
-    @include button(globalBlue)
+    @include button($color:colors(siteBlue), $width:rem(137))
 
 }
 

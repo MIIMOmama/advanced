@@ -1,7 +1,8 @@
 @use '../setting' as *;
 $initType: 'normal';
 
-@mixin button($type: $initType) {
+
+@mixin button($type: $initType, $color, $width) {
     //共通スタイル
         box-sizing: border-box;
         display: inline-block;
@@ -14,20 +15,7 @@ $initType: 'normal';
         transition: .5s;
         letter-spacing: rem(1);
         height: rem(50);
-        line-height: 3;
-
-    //サイト共通ボタンのスタイル1
-    @if($type =='globalBlue') {
-        //スタイル
-        border: rem(3) solid colors(siteBlue);
-        background-color: colors(siteBlue);
-        width: rem(137);
-    }
-
-    //サイト共通ボタンのスタイル2
-    @else if($type =='globalOrange') {
-        border: rem(3) solid colors(siteOrange);
-        background-color: colors(siteOrange);
-        width: rem(142);
-    }
+        line-height: 3.5;
+        background-color: $color;
+        width: $width;
 }
