@@ -13,19 +13,21 @@ $initType: 'normal';
         text-decoration: none;
         transition: .5s;
         letter-spacing: rem(1);
+        height: rem(50);
+        line-height: 3;
 
     //サイト共通ボタンのスタイル1
     @if($type =='globalBlue') {
         //スタイル
         border: rem(3) solid colors(siteBlue);
-        padding: rem(14) rem(21);
         background-color: colors(siteBlue);
+        width: rem(137);
     }
 
     //サイト共通ボタンのスタイル2
     @else if($type =='globalOrange') {
         border: rem(3) solid colors(siteOrange);
         background-color: colors(siteOrange);
-        padding: rem(14) rem(38);
+        width: rem(142);
     }
 }

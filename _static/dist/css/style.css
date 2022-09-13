@@ -602,9 +602,11 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
+  height: 3.125rem;
+  line-height: 3;
   border: 0.1875rem solid #F5A623;
   background-color: #F5A623;
-  padding: 0.875rem 2.375rem;
+  width: 8.875rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -633,9 +635,11 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
+  height: 3.125rem;
+  line-height: 3;
   border: 0.1875rem solid #1B224C;
-  padding: 0.875rem 1.3125rem;
   background-color: #1B224C;
+  width: 8.5625rem;
 }
 @media screen and (max-width: 768px) {
   .global-button--contact {
