@@ -14,8 +14,9 @@ $initType: 'normal';
         text-decoration: none;
         transition: .5s;
         letter-spacing: rem(1);
-        height: rem(50);
-        line-height: 3.5;
         background-color: $color;
         width: $width;
+        border: 3px solid $color;
+        max-width: 100%;
+        padding: rem(14) rem(10);
 }

@@ -604,10 +604,11 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
-  height: 3.125rem;
-  line-height: 3.5;
   background-color: #F5A623;
   width: 8.875rem;
+  border: 3px solid #F5A623;
+  max-width: 100%;
+  padding: 0.875rem 0.625rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -617,7 +618,7 @@ th {
   }
 }
 
-.global-button:hover {
+.global-button:hover, :focus {
   background-color: #fff;
   color: #F5A623;
 }
@@ -636,10 +637,11 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
-  height: 3.125rem;
-  line-height: 3.5;
   background-color: #1B224C;
   width: 8.5625rem;
+  border: 3px solid #1B224C;
+  max-width: 100%;
+  padding: 0.875rem 0.625rem;
 }
 @media screen and (max-width: 768px) {
   .global-button--contact {

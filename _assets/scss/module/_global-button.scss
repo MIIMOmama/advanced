@@ -13,7 +13,7 @@
     }
 }
 
-.global-button:hover {
+.global-button:hover,:focus {
     background-color: colors(white);
     color: colors(siteOrange);
 }
