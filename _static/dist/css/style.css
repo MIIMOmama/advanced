@@ -566,8 +566,9 @@ th {
 }
 
 .contact-info__time {
-  font-size: 0.75rem;
   text-align: right;
+  font-size: 0.75rem;
+  margin-top: 0.625rem;
 }
 
 .contact-info__tel {
@@ -577,7 +578,8 @@ th {
 
 .contact-info__tel-link {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align: bottom;
+  line-height: 1.8;
 }
 
 .contact-info__tel::before {

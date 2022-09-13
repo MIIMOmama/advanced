@@ -5,8 +5,9 @@
     color: colors(siteBlue);
 }
 .contact-info__time {
-    font-size: rem(12);
     text-align: right;
+    font-size: rem(12);
+    margin-top: rem(10);
 }
 
 .contact-info__tel {
@@ -16,7 +17,8 @@
 
 .contact-info__tel-link {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: bottom;
+    line-height: 1.8;
 }
 
 .contact-info__tel::before {
