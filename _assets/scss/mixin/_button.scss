@@ -1,0 +1,20 @@
+@use '../setting' as *;
+
+@mixin button($color: siteBlue, $width: 137) {
+    //共通スタイル
+        box-sizing: border-box;
+        display: inline-block;
+        color: colors(white);
+        font-size: rem(14);
+        font-weight: bold;
+        border-radius: rem(5);
+        text-align: center;
+        text-decoration: none;
+        transition: .5s;
+        letter-spacing: rem(1);
+        background-color: colors($color);
+        width: rem($width);
+        border: 3px solid colors($color);
+        max-width: 100%;
+        padding: rem(14) rem(10);
+}

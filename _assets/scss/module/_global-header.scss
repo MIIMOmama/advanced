@@ -1,0 +1,39 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+
+
+.global-header__inner {
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: rem(15) auto;
+    padding: 0 rem(20);
+
+    @include mq(max-md) {
+        justify-content: space-between;
+    }
+}
+
+.global-header__wrap {
+    display: flex;
+}
+
+.global-header__info-wrap{
+    display: flex;
+    align-items: center;
+    margin-right: rem(23);
+}
+
+.global-header__button {
+
+    @include mq(max-md) {
+        position: fixed;
+        z-index: 199;
+        top: 50%;
+        right: 20%;
+        transform: translateX(400%);
+        transition: .5s;
+    }
+}

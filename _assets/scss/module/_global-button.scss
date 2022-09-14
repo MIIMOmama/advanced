@@ -1,0 +1,33 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.global-button {
+    &:hover,
+    &:focus {
+        background-color: colors(white);
+        color: colors(siteOrange);
+        }
+    @include button($color:siteOrange,$width:142);
+}
+
+.global-button--block {
+
+    @include mq(max-md) {
+        display: block;
+        margin-bottom: rem(10);
+    }
+}
+
+.global-button--contact {
+    margin-left: rem(10);
+        @include mq(max-md) {
+                border-color:colors(white);
+                margin-left: 0;
+            }
+    @include button();
+
+    &:hover,
+    &:focus {
+        color: colors(siteBlue);
+    }
+}
