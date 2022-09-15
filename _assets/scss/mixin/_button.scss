@@ -1,6 +1,6 @@
 @use '../setting' as *;
 
-@mixin button($color: siteBlue, $width: 137) {
+@mixin button($color: siteBlue, $width: 137, $height: 50) {
     //共通スタイル
         box-sizing: border-box;
         display: inline-block;
@@ -14,7 +14,8 @@
         letter-spacing: rem(1);
         background-color: colors($color);
         width: rem($width);
-        border: 3px solid colors($color);
         max-width: 100%;
+        min-height: rem($height);
+        border: 3px solid colors($color);
         padding: rem(14) rem(10);
 }
