@@ -11,7 +11,9 @@ $colors: (
     white: #fff,
     siteBlue: #1B224C,
     siteOrange: #F5A623,
-    navBgColor: rgba(#1B224C,0.5)
+    navBgColor: rgba(#1B224C,0.5),
+    shadowColor: rgba(0, 0, 0, 0.16),
+    explainLineGray:#C3C3C3,
 );
 
 @function colors($key) {

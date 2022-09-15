@@ -1,0 +1,24 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.first-view__inner {
+    position: relative;
+}
+
+.first-view__img-wrap {
+    position: absolute;
+    width: 100%;
+    max-height: rem(476);
+}
+
+.first-view__img {
+    width: 100%;
+    max-height: rem(476);
+    object-fit: cover;
+}
+
+.first-view__text-wrap {
+    position: absolute;
+    width: 100%;
+    margin: rem(116) auto 0;
+}

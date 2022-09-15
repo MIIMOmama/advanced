@@ -1,0 +1,9 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.cta-area-link {
+    display: block;
+    color: colors(white);
+    width: rem(96);
+    border-bottom: rem(1) solid colors(white);
+}
