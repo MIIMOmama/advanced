@@ -1,6 +1,0 @@
-@use '../setting' as *;
-@use '../mixin' as *;
-
-.cta-area-button {
-    @include button(cta,siteOrange,260)
-}

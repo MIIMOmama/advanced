@@ -7,7 +7,7 @@
         background-color: colors(white);
         color: colors(siteOrange);
         }
-    @include button($color:siteOrange,$width:142);
+    @include button(siteOrange, 142);
 }
 
 .global-button--block {
@@ -24,10 +24,36 @@
                 border-color:colors(white);
                 margin-left: 0;
             }
-    @include button();
+    @include button;
 
     &:hover,
     &:focus {
         color: colors(siteBlue);
     }
+}
+
+.global-button--cta {
+    @include button(siteOrange, 260);
+    border-radius: rem(31);
+    min-height: rem(60);
+    line-height: 1.8;
+
+        &:hover,
+        &:focus {
+            background-color: colors(white);
+            color: colors(siteOrange);
+        }
+}
+
+.global-button--link {
+    display: block;
+    color: colors(white);
+    width: rem(96);
+    border-bottom: rem(1) solid colors(white);
+    margin: rem(22) auto;
+
+        &:hover,
+        &:focus {
+            border-bottom: 3px solid colors(white);
+        }
 }

@@ -1,8 +1,6 @@
 @use '../setting' as *;
 
-$initType:"global";
-
-@mixin button($type:$initType, $color: siteBlue, $width: 137) {
+@mixin button($color: siteBlue, $width: 137) {
     //共通スタイル
         box-sizing: border-box;
         display: inline-block;
@@ -19,9 +17,4 @@ $initType:"global";
         border: 3px solid colors($color);
         max-width: 100%;
         padding: rem(14) rem(10);
-
-        @if($type == 'cta') {
-            border-radius: rem(31);
-            padding: rem(19) rem(10);
-        }
 }
