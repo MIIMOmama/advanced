@@ -8,17 +8,25 @@
 .first-view__img-wrap {
     position: absolute;
     width: 100%;
-    max-height: rem(476);
+    height: rem(476);
 }
 
 .first-view__img {
     width: 100%;
     max-height: rem(476);
     object-fit: cover;
+
+    @include mq(max-md) {
+        min-height: rem(476);
+    }
 }
 
 .first-view__text-wrap {
     position: absolute;
     width: 100%;
     margin: rem(116) auto 0;
+
+    @include mq(max-md) {
+            margin-top: rem(50);
+        }
 }

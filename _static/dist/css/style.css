@@ -756,7 +756,7 @@ th {
 .first-view__img-wrap {
   position: absolute;
   width: 100%;
-  max-height: 29.75rem;
+  height: 29.75rem;
 }
 
 .first-view__img {
@@ -765,11 +765,21 @@ th {
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 768px) {
+  .first-view__img {
+    min-height: 29.75rem;
+  }
+}
 
 .first-view__text-wrap {
   position: absolute;
   width: 100%;
   margin: 7.25rem auto 0;
+}
+@media screen and (max-width: 768px) {
+  .first-view__text-wrap {
+    margin-top: 3.125rem;
+  }
 }
 
 .top-cta-area {
