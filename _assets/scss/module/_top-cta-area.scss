@@ -1,0 +1,24 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.top-cta-area {
+    text-align: center;
+}
+
+.top-cta-area__title {
+    color: colors(white);
+    font-size: rem(48);
+    font-weight: bold;
+    line-height: 1.8;
+    text-shadow: colors(shadowColor) 0 3px 6px;
+    padding: 0 rem(20);
+}
+
+.top-cta-area__text {
+    color: colors(white);
+    font-size: rem(18);
+    line-height: 2;
+    padding: 0 rem(20);
+}
+
+
