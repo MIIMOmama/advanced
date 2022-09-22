@@ -853,7 +853,7 @@ th {
   padding: 0 3.375rem 1.25rem;
 }
 
-.catch__title {
+.catch__worries-title {
   color: #fff;
   font-size: 2.25rem;
   font-weight: bold;
@@ -861,7 +861,7 @@ th {
   padding: 3.9375rem 1.25rem;
 }
 
-.catch__item {
+.catch__worries-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,19 +873,19 @@ th {
           align-items: center;
 }
 @media screen and (max-width: 480px) {
-  .catch__item {
+  .catch__worries-wrap {
     display: block;
   }
 }
 
-.catch__text {
+.catch__worries-text {
   color: #fff;
   text-align: center;
   margin-right: 1.875rem;
   line-height: 2;
 }
 @media screen and (max-width: 480px) {
-  .catch__text {
+  .catch__worries-text {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 15.625rem;
@@ -895,7 +895,16 @@ th {
   }
 }
 
-.catch__inner--attention {
+.catch__worries-text:last-of-type {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .catch__worries-text:last-of-type {
+    margin: 0 auto 1.875rem;
+  }
+}
+
+.catch__appeal-box {
   max-width: 56.25rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -906,7 +915,7 @@ th {
   padding: 1.25rem 3.125rem;
 }
 
-.catch__title--attention {
+.catch__appeal-title {
   color: #1B224C;
   text-align: center;
   font-size: 2.25rem;
@@ -914,21 +923,21 @@ th {
   line-height: 1.5;
 }
 
-.catch__title--lined {
+.catch__appeal-title--lined {
   display: inline-block;
   line-height: 1;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #F5A623));
   background: linear-gradient(transparent 70%, #F5A623 0%);
 }
 @media screen and (max-width: 480px) {
-  .catch__title--lined {
+  .catch__appeal-title--lined {
     display: inline;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #F5A623));
     background: linear-gradient(transparent 70%, #F5A623 0%);
   }
 }
 
-.catch__text--attention {
+.catch__appeal-text {
   color: #1B224C;
   text-align: center;
   line-height: 1.8;
