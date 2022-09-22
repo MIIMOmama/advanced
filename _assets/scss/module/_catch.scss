@@ -24,7 +24,7 @@
     }
 }
 
-.catch__worries-text {
+.catch__worries-detail {
     color: colors(white);
     text-align: center;
     margin-right: rem(30);
@@ -39,7 +39,7 @@
     }
 }
 
-.catch__worries-text:last-of-type {
+.catch__worries-detail:last-of-type {
     margin-right: 0;
 
     @include mq(max-sm) {
@@ -76,7 +76,7 @@
     }
 }
 
-.catch__appeal-text {
+.catch__appeal-detail {
     color: colors(siteBlue);
     text-align: center;
     line-height: 1.8;

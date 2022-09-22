@@ -878,14 +878,14 @@ th {
   }
 }
 
-.catch__worries-text {
+.catch__worries-detail {
   color: #fff;
   text-align: center;
   margin-right: 1.875rem;
   line-height: 2;
 }
 @media screen and (max-width: 480px) {
-  .catch__worries-text {
+  .catch__worries-detail {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 15.625rem;
@@ -895,11 +895,11 @@ th {
   }
 }
 
-.catch__worries-text:last-of-type {
+.catch__worries-detail:last-of-type {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  .catch__worries-text:last-of-type {
+  .catch__worries-detail:last-of-type {
     margin: 0 auto 1.875rem;
   }
 }
@@ -937,7 +937,7 @@ th {
   }
 }
 
-.catch__appeal-text {
+.catch__appeal-detail {
   color: #1B224C;
   text-align: center;
   line-height: 1.8;
