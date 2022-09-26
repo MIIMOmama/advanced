@@ -1,0 +1,24 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.appeal__inner {
+    max-width: rem(900);
+    padding: rem(59) rem(20) rem(39);
+    margin: 0 auto;
+}
+
+.appeal__title {
+    color: colors(siteBlue);
+    font-size: rem(36);
+    font-weight: bold;
+    text-align: center;
+    padding: 0 rem(20);
+}
+
+.appeal__item {
+    margin-top: rem(60);
+}
+
+.appeal__media-container {
+    margin-bottom: rem(93);
+}

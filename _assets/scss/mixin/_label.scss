@@ -1,0 +1,16 @@
+@use '../setting' as *;
+
+@mixin label($color: siteBlue, $width: 90, $height: 30) {
+    //共通スタイル
+        display: block;
+        box-sizing: border-box;
+        color: colors(white);
+        font-size: rem(12);
+        text-align: center;
+        text-decoration: none;
+        background-color: colors($color);
+        width: rem($width);
+        height: rem($height);
+        padding: rem(10);
+        line-height: 0.8;
+}
