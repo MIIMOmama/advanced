@@ -1089,10 +1089,12 @@ th {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   letter-spacing: 0.0625rem;
-  width: 8.5625rem;
+  width: 12.5rem;
   max-width: 100%;
   min-height: 3.125rem;
   border: 3px solid;
   padding: 0.875rem 0.625rem;
+  border: 1px solid #fff;
+  border-radius: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */

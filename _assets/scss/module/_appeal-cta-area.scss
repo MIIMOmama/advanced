@@ -21,5 +21,7 @@
 }
 
 .appeal-cta-area__button {
-    @include button (ctaWhite)
+    @include button (none,200, 50);
+    border: 1px solid colors(white);
+    border-radius: rem(30);
 }
