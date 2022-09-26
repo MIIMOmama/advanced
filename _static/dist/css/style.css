@@ -792,6 +792,7 @@ th {
 
 .first-view__inner {
   position: relative;
+  height: 29.75rem;
 }
 
 .first-view__img-wrap {
@@ -845,5 +846,101 @@ th {
   font-size: 1.125rem;
   line-height: 2;
   padding: 0 1.25rem;
+}
+
+.catch {
+  background-color: #1B224C;
+  padding: 0 3.375rem 1.25rem;
+}
+
+.catch__worries-title {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 3.9375rem 1.25rem;
+}
+
+.catch__worries-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .catch__worries-wrap {
+    display: block;
+  }
+}
+
+.catch__worries-detail {
+  color: #fff;
+  text-align: center;
+  margin-right: 1.875rem;
+  line-height: 2;
+}
+@media screen and (max-width: 480px) {
+  .catch__worries-detail {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 15.625rem;
+    margin: 0 auto 1.875rem;
+    border: 3px solid #fff;
+    padding: 1.25rem;
+  }
+}
+
+.catch__worries-detail:last-of-type {
+  margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .catch__worries-detail:last-of-type {
+    margin: 0 auto 1.875rem;
+  }
+}
+
+.catch__appeal-box {
+  max-width: 56.25rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  margin: 5.1875rem auto 3.3125rem;
+  outline: 11px solid #fff;
+  border: 5px solid #1B224C;
+  padding: 1.25rem 3.125rem;
+}
+
+.catch__appeal-title {
+  color: #1B224C;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.catch__appeal-title--lined {
+  display: inline-block;
+  line-height: 1;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #F5A623));
+  background: linear-gradient(transparent 70%, #F5A623 0%);
+}
+@media screen and (max-width: 480px) {
+  .catch__appeal-title--lined {
+    display: inline;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), color-stop(0%, #F5A623));
+    background: linear-gradient(transparent 70%, #F5A623 0%);
+  }
+}
+
+.catch__appeal-detail {
+  color: #1B224C;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 0.625rem;
 }
 /*# sourceMappingURL=style.css.map */
