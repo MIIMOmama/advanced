@@ -17,8 +17,70 @@
 
 .appeal__item {
     margin-top: rem(60);
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(max-md) {
+        display: block;
+        text-align: center;
+    }
 }
 
-.appeal__media-container {
+.appeal__item-wrap {
     margin-bottom: rem(93);
+}
+
+.appeal__item-body {
+max-width: rem(500);
+
+    @include mq(max-md) {
+        display: inline-block;
+    }
+}
+
+.appeal__item-label {
+    @include label(siteOrange);
+}
+
+.appeal__item-title {
+    color: colors(siteBlue);
+    font-size: rem(26);
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: rem(35);
+}
+
+.appeal__item-description {
+    color: colors(siteBlue);
+    line-height: 1.5;
+    margin-top: rem(39);
+}
+
+.appeal__item-img-wrap {
+    width: rem(350);
+    height: rem(240);
+
+    @include mq(max-md) {
+        display: inline-block;
+        margin-top: rem(20);
+    }
+}
+
+.appeal__item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.appeal__item--reverse {
+    flex-direction: row-reverse;
+}
+
+.appeal__item-body--reverse {
+    @include mq(max-md) {
+        display: inline-block;
+    }
+}
+
+.appeal__item-img-wrap--reverse {
+    display: inline-block;
 }

@@ -2,11 +2,13 @@
 @use '../mixin' as *;
 
 .appeal-cta-area {
+    box-sizing: border-box;
     text-align: center;
     max-width: rem(906);
-    height: rem(217);
+    height: auto;
     background: no-repeat url(../img/cta/price.jpg) border-box 0 0/ contain;
-
+    padding: rem(56);
+    
     @include mq(max-md) {
         background-size: cover;
     }
@@ -17,7 +19,7 @@
     font-size: rem(26);
     font-weight: bold;
     text-align: center;
-    padding: rem(61) 0 rem(25) 0;
+    padding-bottom: rem(25);
 }
 
 .appeal-cta-area__button {
