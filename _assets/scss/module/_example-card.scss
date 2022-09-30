@@ -36,26 +36,29 @@ margin-top: rem(16);
 }
 
 .example-card__item-title {
+    width: rem(100);
     color: colors(siteBlue);
     font-weight: normal;
     background-color: colors(white);
     box-sizing: border-box;
-    padding: rem(6) rem(42) rem(6) rem(10);
+    padding: rem(7) rem(10);
     float: left;
 }
 
 .example-card__item-name {
+    width: rem(172);
     color: colors(siteBlue);
     background-color: colors(white);
     box-sizing: border-box;
-    padding: rem(6) rem(42) rem(6) rem(10);
+    padding: rem(7) rem(10);
     margin-left: rem(108);
 }
 
 .example-card__item-detail {
+    width: rem(280);
     color: colors(siteBlue);
     background-color: colors(white);
     box-sizing: border-box;
-    padding: rem(8) rem(82) rem(8) rem(14);
+    padding: rem(7) rem(14);
     margin-top: rem(10);
 }
