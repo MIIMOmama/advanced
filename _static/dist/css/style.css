@@ -813,13 +813,13 @@ th {
   }
 }
 
-.first-view__text-wrap {
+.first-view__body {
   position: absolute;
   width: 100%;
   margin: 7.25rem auto 0;
 }
 @media screen and (max-width: 768px) {
-  .first-view__text-wrap {
+  .first-view__body {
     margin-top: 3.125rem;
   }
 }
@@ -841,7 +841,7 @@ th {
   padding: 0 1.25rem;
 }
 
-.top-cta-area__text {
+.top-cta-area__detail {
   color: #fff;
   font-size: 1.125rem;
   line-height: 2;
@@ -878,14 +878,14 @@ th {
   }
 }
 
-.catch__worries-detail {
+.catch__worries {
   color: #fff;
   text-align: center;
   margin-right: 1.875rem;
   line-height: 2;
 }
 @media screen and (max-width: 480px) {
-  .catch__worries-detail {
+  .catch__worries {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 15.625rem;
@@ -895,11 +895,11 @@ th {
   }
 }
 
-.catch__worries-detail:last-of-type {
+.catch__worries:last-of-type {
   margin-right: 0;
 }
 @media screen and (max-width: 480px) {
-  .catch__worries-detail:last-of-type {
+  .catch__worries:last-of-type {
     margin: 0 auto 1.875rem;
   }
 }
@@ -937,10 +937,160 @@ th {
   }
 }
 
-.catch__appeal-detail {
+.catch__appeal {
   color: #1B224C;
   text-align: center;
   line-height: 1.8;
   margin-top: 0.625rem;
+}
+
+.appeal__inner {
+  max-width: 56.25rem;
+  padding: 3.6875rem 1.25rem 2.4375rem;
+  margin: 0 auto;
+}
+
+.appeal__title {
+  color: #1B224C;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+.appeal__item {
+  margin-top: 3.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .appeal__item {
+    display: block;
+    text-align: center;
+  }
+}
+
+.appeal__item-wrap {
+  margin-bottom: 5.8125rem;
+}
+
+.appeal__item-body {
+  max-width: 31.25rem;
+}
+@media screen and (max-width: 768px) {
+  .appeal__item-body {
+    display: inline-block;
+  }
+}
+
+.appeal__item-label {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-size: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F5A623;
+  width: 5.625rem;
+  height: 1.875rem;
+  padding: 0.625rem;
+  line-height: 0.8;
+}
+
+.appeal__item-title {
+  color: #1B224C;
+  font-size: 1.625rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-top: 2.1875rem;
+}
+
+.appeal__item-description {
+  color: #1B224C;
+  line-height: 1.5;
+  margin-top: 2.4375rem;
+}
+
+.appeal__item-img-wrap {
+  width: 21.875rem;
+  height: 15rem;
+}
+@media screen and (max-width: 768px) {
+  .appeal__item-img-wrap {
+    display: inline-block;
+    margin-top: 1.25rem;
+  }
+}
+
+.appeal__item-img {
+  width: 100%;
+  height: 100%;
+}
+
+.appeal__item--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 768px) {
+  .appeal__item-body--reverse {
+    display: inline-block;
+  }
+}
+
+.appeal__item-img-wrap--reverse {
+  display: inline-block;
+}
+
+.appeal-cta-area {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  max-width: 56.625rem;
+  height: auto;
+  background: no-repeat url(../img/cta/price.jpg) border-box 0 0/contain;
+  padding: 3.5rem;
+}
+@media screen and (max-width: 768px) {
+  .appeal-cta-area {
+    background-size: cover;
+  }
+}
+
+.appeal-cta-area__title {
+  color: #fff;
+  font-size: 1.625rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1.5625rem;
+}
+
+.appeal-cta-area__button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  border-radius: 0.3125rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 0.0625rem;
+  width: 12.5rem;
+  max-width: 100%;
+  min-height: 3.125rem;
+  border: 3px solid;
+  padding: 0.875rem 0.625rem;
+  border: 1px solid #fff;
+  border-radius: 1.875rem;
 }
 /*# sourceMappingURL=style.css.map */

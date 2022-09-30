@@ -1,0 +1,29 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.appeal-cta-area {
+    box-sizing: border-box;
+    text-align: center;
+    max-width: rem(906);
+    height: auto;
+    background: no-repeat url(../img/cta/price.jpg) border-box 0 0/ contain;
+    padding: rem(56);
+    
+    @include mq(max-md) {
+        background-size: cover;
+    }
+}
+
+.appeal-cta-area__title {
+    color: colors(white);
+    font-size: rem(26);
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: rem(25);
+}
+
+.appeal-cta-area__button {
+    @include button (none,200, 50);
+    border: 1px solid colors(white);
+    border-radius: rem(30);
+}
