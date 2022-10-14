@@ -1134,7 +1134,7 @@ th {
 }
 @media screen and (max-width: 768px) {
   .example-card {
-    margin: 1.875rem;
+    margin: 1.875rem 1.875rem 0;
   }
 }
 
