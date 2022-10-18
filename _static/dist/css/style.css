@@ -954,6 +954,8 @@ th {
 }
 
 .appeal__inner {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   max-width: 56.25rem;
   padding: 3.6875rem 1.25rem 2.4375rem;
   margin: 0 auto;
@@ -968,6 +970,7 @@ th {
 }
 
 .appeal__item {
+  max-width: 56.25rem;
   margin-top: 3.75rem;
   display: -webkit-box;
   display: -ms-flexbox;
