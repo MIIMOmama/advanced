@@ -31,34 +31,29 @@
     width: rem(135);
     height: rem(138);
 }
-.example-card__item {
+.example-card__list {
 margin-top: rem(16);    
 }
 
-.example-card__item-title {
-    width: rem(100);
+.example-card__item {
     color: colors(siteBlue);
-    font-weight: normal;
     background-color: colors(white);
-    box-sizing: border-box;
+}
+.example-card__item--title {
+    width: rem(100);
+    font-weight: normal;
     padding: rem(7) rem(10);
     float: left;
 }
 
-.example-card__item-name {
+.example-card__item--name {
     width: rem(172);
-    color: colors(siteBlue);
-    background-color: colors(white);
-    box-sizing: border-box;
     padding: rem(7) rem(10);
     margin-left: rem(108);
 }
 
-.example-card__item-detail {
+.example-card__item--detail {
     width: rem(280);
-    color: colors(siteBlue);
-    background-color: colors(white);
-    box-sizing: border-box;
     padding: rem(7) rem(14);
     margin-top: rem(10);
 }

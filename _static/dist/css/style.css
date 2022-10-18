@@ -1176,37 +1176,30 @@ th {
   height: 8.625rem;
 }
 
-.example-card__item {
+.example-card__list {
   margin-top: 1rem;
 }
 
-.example-card__item-title {
-  width: 6.25rem;
+.example-card__item {
   color: #1B224C;
-  font-weight: normal;
   background-color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+}
+
+.example-card__item--title {
+  width: 6.25rem;
+  font-weight: normal;
   padding: 0.4375rem 0.625rem;
   float: left;
 }
 
-.example-card__item-name {
+.example-card__item--name {
   width: 10.75rem;
-  color: #1B224C;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0.4375rem 0.625rem;
   margin-left: 6.75rem;
 }
 
-.example-card__item-detail {
+.example-card__item--detail {
   width: 17.5rem;
-  color: #1B224C;
-  background-color: #fff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0.4375rem 0.875rem;
   margin-top: 0.625rem;
 }
