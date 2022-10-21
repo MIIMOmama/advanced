@@ -1,0 +1,30 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.example {
+    background-color: colors(siteBlue);
+}
+
+.example__title {
+    color: colors(white);
+    font-size: rem(36);
+    font-weight: bold;
+    text-align: center;
+    padding: rem(58) rem(20) rem(137);
+}
+
+.example__inner {
+    max-width: rem(900);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: rem(60);
+
+    @include mq(max-md) {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 0 rem(60) rem(60);
+    }
+
+}

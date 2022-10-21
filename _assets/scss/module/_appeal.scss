@@ -2,6 +2,7 @@
 @use '../mixin' as *;
 
 .appeal__inner {
+    box-sizing: content-box;
     max-width: rem(900);
     padding: rem(59) rem(20) rem(39);
     margin: 0 auto;
@@ -16,6 +17,7 @@
 }
 
 .appeal__item {
+    max-width: rem(900);
     margin-top: rem(60);
     display: flex;
     justify-content: space-between;
