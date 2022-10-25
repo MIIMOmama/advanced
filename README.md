@@ -1,9 +1,19 @@
 # advanced
 
-WordPress化に向けたhtmlサイトの構築。
+デザインカンプからのコーディング課題上級編
 
-CSS設計は、BEMを使用。
 
+・WordPress化に向けたhtmlサイトの構築
+・SCSSディレクトリの構成は、吉本式BEMを採用
+・CSSのclassはBEMをもとに命名
+・セクションごとにブランチを作成し、レビューを受けて修正したものをマージ
+
+
+
+
+
+以下
+吉本式BEMのmixinルール
 
 mixinルール 1
 別Blockで同じスタイルが必要になった場合、mixinを定義する。
@@ -16,6 +26,9 @@ mixinルール 2
 
 mixinルール 3
 mixinの定義ファイル名は、mixin名と同じにする。
+
+
+
 
 $initType: 'normal';
 @mixin _btn($type:$initType){
