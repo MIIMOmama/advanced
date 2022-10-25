@@ -1229,7 +1229,7 @@ th {
   text-align: center;
 }
 
-.explain__list {
+.explain__item {
   max-width: 56.25rem;
   margin-top: 0.5rem;
   display: -webkit-box;
@@ -1241,14 +1241,13 @@ th {
   background-color: #F8F8F8;
 }
 @media screen and (max-width: 768px) {
-  .explain__list {
+  .explain__item {
     max-width: 31.25rem;
     display: block;
     margin: 1.875rem auto;
   }
 }
-
-.explain__list:first-of-type {
+.explain__item:first-of-type {
   margin-top: 3.3125rem;
 }
 

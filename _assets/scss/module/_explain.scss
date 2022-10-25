@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.explain__list {
+.explain__item {
     max-width: rem(900);
     margin-top: rem(8);
     display: flex;
@@ -31,11 +31,12 @@
         display: block;
         margin: rem(30) auto;
     }
+
+        &:first-of-type {
+            margin-top: rem(53);
+        }
 }
 
-.explain__list:first-of-type {
-    margin-top: rem(53);
-}
 
 .explain__item-label {
     display: inline-block;
