@@ -1,5 +1,10 @@
 # advanced
 
+WordPress化に向けたhtmlサイトの構築。
+
+CSS設計は、BEMを使用。
+
+
 mixinルール 1
 別Blockで同じスタイルが必要になった場合、mixinを定義する。
 
