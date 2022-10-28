@@ -1,0 +1,77 @@
+@use '../setting' as *;
+@use '../mixin' as *;
+
+.question {
+    display: flex;
+    justify-content: center;
+}
+
+.question__inner {
+    width: 100%;
+    max-width: rem(900);
+    padding: 0 rem(20);
+}
+
+.question__title {
+    color: colors(siteBlue);
+    font-size: rem(36);
+    font-weight: bold;
+    text-align: center;
+}
+
+.question__list {
+    margin-top: rem(32);
+
+}
+
+.question__item-wrap {
+    color: colors(siteBlue);
+    border-top: 1px solid colors(siteBlue);
+    
+
+    &:last-of-type {
+            border-bottom: 1px solid colors(siteBlue);
+    }
+
+    &:first-of-type {
+
+        .question__item-description {
+            display: block;
+        }
+        .question-toggle__line::after {
+            transform: rotate(0deg);
+        }
+        .question-toggle-checkbox:checked+.question__item .question-toggle .question-toggle__line::after {
+            transform: rotate(90deg);
+        }
+        .question-toggle-checkbox:checked~.question__item-description {
+            display: none;
+        }
+    }
+
+
+}
+
+
+.question__item {
+    padding-top: rem(28);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.question__item-title {
+    margin-bottom: rem(30);
+}
+
+.question__item-description {
+    background-color: colors(backgroundGray);
+    padding: rem(23);
+    margin: rem(15) 0 rem(15);
+    display: none;
+
+
+
+
+}
+
