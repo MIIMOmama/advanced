@@ -1206,4 +1206,104 @@ th {
   padding: 0.4375rem 0.875rem;
   margin-top: 0.625rem;
 }
+
+.explain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.explain__inner {
+  width: 100%;
+  max-width: 56.25rem;
+  padding: 3.625rem 1.25rem 4.6875rem;
+}
+
+.explain__title {
+  color: #1B224C;
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.explain__item {
+  max-width: 56.25rem;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F8F8F8;
+}
+@media screen and (max-width: 768px) {
+  .explain__item {
+    max-width: 31.25rem;
+    display: block;
+    margin: 1.875rem auto;
+  }
+}
+.explain__item:first-of-type {
+  margin-top: 3.3125rem;
+}
+
+.explain__item-label {
+  display: inline-block;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: #F5A623;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.625rem;
+  line-height: 0.8;
+  line-height: 2.7;
+}
+
+.explain__item-title {
+  color: #1B224C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 13.375rem;
+  padding-left: 1.3125rem;
+}
+@media screen and (max-width: 768px) {
+  .explain__item-title {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.explain__item-description {
+  color: #1B224C;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .explain__item-description {
+    text-align: center;
+    padding-bottom: 3.75rem;
+    margin-top: 1.875rem;
+  }
+}
+
+.explain__item-description::before {
+  content: "";
+  border-right: 1px solid #C3C3C3;
+  margin-right: 3.3125rem;
+  padding: 0.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .explain__item-description::before {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
