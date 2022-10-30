@@ -11,13 +11,14 @@
 
 
 .question-toggle {
-        width: rem(30);
-        height: rem(30);
-        cursor: pointer;
+    width: rem(25);
+    height: rem(25);
+    cursor: pointer;
+    margin-top: rem(15);
 
-        @include mq(max-sm) {
-            margin-top: rem(20);
-        }
+    @include mq(max-sm) {
+        margin-top: rem(30);
+    }
 }
 
 
@@ -33,9 +34,9 @@
 }
 
 .question-toggle__line::after {
-        content: '';
-        margin-bottom: 50%;
-        transform: rotate(90deg);
+    content: '';
+    margin-bottom: 50%;
+    transform: rotate(90deg);
 }
 
 

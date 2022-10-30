@@ -1396,13 +1396,14 @@ th {
 }
 
 .question-toggle {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   cursor: pointer;
+  margin-top: 0.9375rem;
 }
 @media screen and (max-width: 480px) {
   .question-toggle {
-    margin-top: 1.25rem;
+    margin-top: 1.875rem;
   }
 }
 
