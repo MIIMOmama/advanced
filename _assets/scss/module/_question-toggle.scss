@@ -11,9 +11,13 @@
 
 
 .question-toggle {
-        width: 30px;
-        height: 30px;
+        width: rem(30);
+        height: rem(30);
         cursor: pointer;
+
+        @include mq(max-sm) {
+            margin-top: rem(20);
+        }
 }
 
 
@@ -25,6 +29,7 @@
     background-color: colors(siteBlue);
     border-radius: 10px;
     transition: .3s;
+
 }
 
 .question-toggle__line::after {

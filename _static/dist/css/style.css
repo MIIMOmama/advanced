@@ -1117,6 +1117,11 @@ th {
   text-align: center;
   padding: 3.625rem 1.25rem 8.5625rem;
 }
+@media screen and (max-width: 768px) {
+  .example__title {
+    padding-bottom: 3.125rem;
+  }
+}
 
 .example__inner {
   max-width: 56.25rem;
@@ -1367,6 +1372,12 @@ th {
 
 .question__item-title {
   margin-bottom: 1.875rem;
+  line-height: 2;
+}
+@media screen and (max-width: 480px) {
+  .question__item-title {
+    max-width: 18.75rem;
+  }
 }
 
 .question__item-description {
@@ -1385,9 +1396,14 @@ th {
 }
 
 .question-toggle {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .question-toggle {
+    margin-top: 1.25rem;
+  }
 }
 
 .question-toggle__line::after,

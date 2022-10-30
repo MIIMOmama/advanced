@@ -11,6 +11,10 @@
     font-weight: bold;
     text-align: center;
     padding: rem(58) rem(20) rem(137);
+
+    @include mq(max-md) {
+        padding-bottom: rem(50);
+    }
 }
 
 .example__inner {
