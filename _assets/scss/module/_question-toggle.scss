@@ -14,11 +14,8 @@
     width: rem(25);
     height: rem(25);
     cursor: pointer;
-    margin-top: rem(15);
 
-    @include mq(max-sm) {
-        margin-top: rem(30);
-    }
+
 }
 
 

@@ -1368,6 +1368,9 @@ th {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .question__item-title {
@@ -1385,6 +1388,7 @@ th {
   padding: 1.4375rem;
   margin: 0.9375rem 0 0.9375rem;
   display: none;
+  line-height: 2;
 }
 
 .question-toggle-checkbox {
@@ -1399,12 +1403,6 @@ th {
   width: 1.5625rem;
   height: 1.5625rem;
   cursor: pointer;
-  margin-top: 0.9375rem;
-}
-@media screen and (max-width: 480px) {
-  .question-toggle {
-    margin-top: 1.875rem;
-  }
 }
 
 .question-toggle__line::after,
